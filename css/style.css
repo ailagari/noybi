@@ -375,6 +375,7 @@ div.links ul li h5 a {
     font-family: "latoregular";
     font-size: 20px;
     margin-bottom: 10px;
+    text-align: left;
 }
 #footer div.credit {
     border-top: 2px solid grey;
@@ -548,6 +549,7 @@ section.header div.content .main-menu ul li{
 section.header div.content .main-menu ul li a {
     color:#13233d;
     font-weight: 600;
+    display: block;
 }
 section.header div.content .main-menu ul li:hover {
     background: #777777a8;
@@ -832,7 +834,7 @@ section.header div.content span.close {
         background-repeat: no-repeat;
         background-image: url(../images/hero-1.jpg);
         background-size: cover;
-        height: 135vh;
+        height: 125vh;
     }
     #footer div.content div.contact{
         text-align: center;
@@ -849,27 +851,62 @@ section.header div.content span.close {
     #spotlight section.homespot div.right {
         display: none;
     }
+    #footer div.content div.company {
+        display: inline-block;
+        width: 90%;
+        text-align: left;
+    }
+    #footer div.content div.company ul li h5, div.links ul li h5 {
+        margin-bottom: 10px;
+        text-align: left;
+    }
+    #footer div.content div.contact {
+        display: inline-block;
+        width: 78%;
+    }
+    #footer div.content div.contact h4 {
+        color: black;
+        font-family: "latobold";
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        text-align: left;
+    }
     
 }
 @media all and (max-width: 420px){
     #footer div.content div.contact ul {
-        margin-left: 20%;
+        margin-left: 0%;
     }
     #footer div.content{
         width: 100%;
     }
     #footer div.content div.contact{
         width: 100%;
+        width: 76%;
     }
     #footer div.content div.company {
         display: inline-block;
         width: 90%;
+        text-align: left;
+    }
+    #footer div.content div.company ul li h5, div.links ul li h5 {
+        margin-bottom: 10px;
+        text-align: left;
     }
     #spotlight section.homespot div.left h1 {
         text-align: left;
         font-family: "latobold";
         color: white;
         font-size: 61px;
+    }
+    #footer div.content div.contact h4 {
+        color: black;
+        font-family: "latobold";
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        text-align: left;
     }
     #spotlight section.homespot div.left {
         width: 100%;
@@ -934,7 +971,7 @@ section.header div.content span.close {
         color: black;
         font-size: 24px;
     }
-    #spotlight section.homespot div.left h1 {
+     #spotlight section.homespot div.left h1 {
         text-align: left;
         font-family: "latobold";
         color: white;
@@ -947,7 +984,7 @@ section.header div.content span.close {
     #spotlight section.homespot div.left{
         width: 100%;
     }
-    #spotlight section.homespot div.left h1 {;
+    #spotlight section.homespot div.left h1 {
         font-size: 44px;
     }
     section.header div.content div.left h1 a {
