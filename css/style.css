@@ -1,0 +1,1002 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    background: transparent;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+blockquote {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after {
+    content: "";
+    content: none;
+}
+del {
+    text-decoration: line-through;
+}
+header,
+section,
+article,
+aside,
+nav,
+footer,
+address {
+    display: block;
+}
+@font-face {
+    font-family: 'product_sansregular';
+    src: url('../fonts/product_sans_regular-webfont.woff2') format('woff2'),
+        url('../fonts/product_sans_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "latobold";
+    src: url("../fonts/lato-bold-webfont.woff2") format("woff2"),
+        url("../fonts/lato-bold-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "latoregular";
+    src: url("../fonts/lato-regular-webfont.woff2") format("woff2"),
+        url("../fonts/lato-regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: "open_sansregular", Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: #333;
+    overflow-x: hidden;
+    min-width: 320px;
+}
+input,
+textarea,
+select {
+    font-family: "open_sansregular", Arial, Helvetica, sans-serif;
+}
+p {
+    line-height: 1.6em;
+}
+br.clear {
+    clear: both;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.thumb {
+    display: block;
+}
+.thumb img {
+    display: block;
+    width: 100%;
+}
+a:hover,
+[type="submit"]:hover {
+    filter: alpha(opacity=85);
+    -moz-opacity: 0.85;
+    -khtml-opacity: 0.85;
+    opacity: 0.85;
+}
+.dropbtn {
+    color: black;
+    font-size: 22px;
+    font-family: "latobold";
+    border-bottom: 2px solid grey;
+    cursor: pointer;
+}
+/* Dropdown button on hover & focus */
+.dropbtn:hover,
+.dropbtn:focus {
+    background-color: #2980b9;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+    display: block;
+}
+.wrapper {
+    width: 95%;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+#spotlight {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-image: url('../images/hero-1.jpg');
+    background-size: cover;
+    height: 130vh;
+}
+section.header {
+    padding-top: 20px;
+}
+section.header div.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+section.header div.content div.left {
+    display: flex;
+    align-items: center;
+}
+section.header div.content div.left h1 a h2 {
+    color: white;
+    margin-left: 20px;
+    font-size: 53px;
+    font-family: "latoregular";
+}
+section.header div.content div.left h1 a {
+    display: inline-block;
+    width: 70%;
+    margin-top: 10px;
+    color: red;
+}
+section.header div.content div.left h1 a img {
+    width: 100%;
+}
+.main-menu ul li{
+
+}
+section.header div.content div.right {}
+section.header div.content div.right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+section.header div.nav{
+    display: none;
+}
+section.header div.nav ul{
+    display: flex;
+    align-items: center;
+}
+section.header div.nav ul li{
+    margin-right: 40px;
+}
+section.header div.nav ul li a{
+    text-align: center;
+    display: inline-block;
+    color: white;
+    font-size: 22px;
+    font-family: "latoregular";
+    padding-bottom: 5px;
+}
+section.header div.nav ul li a div.cart{
+    width: 26px;
+    height: 23px;
+}
+section.header div.nav ul li a div.cart img{
+    width: 100%;
+}
+section.header div.nav ul li:nth-child(2) a{
+    padding: 10px 30px;
+    font-size: 19px;
+    font-family: "latobold";
+    background-color: white;
+    color: #13233D;
+    border-radius: 3px;
+}
+section.header div.nav ul li:nth-child(2) a:hover{
+    background-color: red;
+    color: white;
+    transition-duration: 0.8s;
+}
+section.header div.nav ul li:nth-child(1) a span svg:hover{
+    color: red;
+    transition-duration: 0.8s;
+}
+section.header div.content div.right ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+section.header div.content div.right ul li {
+    margin-right: 40px;
+}
+section.header div.content div.right ul li:nth-child(1) {
+    border-bottom: 2px solid white;
+}
+section.header div.content div.right ul li:nth-child(1) a {
+    padding-bottom: 5px;
+}
+section.header div.content div.right ul li a {
+    text-align: center;
+    display: inline-block;
+    color: white;
+    font-size: 22px;
+    font-family: "latoregular";
+    padding-bottom: 5px;
+}
+section.header div.content div.right ul li:nth-child(8) a {
+    padding: 10px 30px;
+    font-size: 19px;
+    font-family: "latobold";
+    background-color: white;
+    color: #13233D;
+    border-radius: 3px;
+    transition: 0.6s;
+}
+section.header div.content div.right ul li:nth-child(8) a:hover {
+    background-color: red;
+    color: white;
+}
+section.header div.content div.right ul li a span {}
+
+section.header div.content div.right ul li a span svg {
+    color: white;
+    width: 26px;
+    height: 23px;
+}
+section.header div.content div.right ul li:hover {
+    border-bottom: 2px solid white;
+    font-family: "latobold";
+
+}
+section.header div.content div.right ul li:hover:nth-child(7) {
+    border-bottom: none;
+}
+section.header div.content div.right ul li:hover:nth-child(8) {
+    border-bottom: none;
+}
+section.header div.content div.right ul li:hover a span svg {
+    color: red;
+    transition-duration: 0.8s;
+}
+
+#footer {
+    padding-top: 0px;
+}
+#footer div.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+#footer div.content div.social {
+    display: inline-block;
+}
+#footer div.social div.footlogo{
+    width:250px;
+    margin-bottom: 20px;
+}
+#footer div.social div.footlogo img{
+    width:100%;
+}
+#footer div.content div.social div.media {}
+#footer div.content div.social div.media ul {
+    display: flex;
+    justify-content: center;
+}
+#footer div.content div.social div.media ul li {
+    margin-right: 10px;
+}
+#footer div.content div.social div.media ul li:nth-child(4) {
+    margin-right: 0;
+}
+#footer div.content div.social div.media ul li div.image {
+    width: 29px;
+    height: 29px;
+    box-shadow: 0px 11px 19px #0000005e;
+    color: black;
+}
+#footer div.content div.social div.media ul li div.image:hover {
+    box-shadow: 0px 11px 19px #0000005e;
+    color: red;
+    transition-duration: 0.8s;
+}
+#footer div.content div.company,
+div.links {}
+#footer div.content div.company h4,
+div.links h4 {
+    color: black;
+    font-family: "latobold";
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+#footer div.content div.company,
+div.links ul {}
+#footer div.content div.company,
+div.links ul li {}
+#footer div.content div.company ul li h5,
+div.links ul li h5 {
+    margin-bottom: 10px;
+}
+#footer div.content div.company ul li h5 a,
+div.links ul li h5 a {
+    color: grey;
+    font-family: "latoregular";
+    font-size: 18px;
+}
+#footer div.content div.contact {
+    margin-right: 50px;
+}
+#footer div.content div.contact h4 {
+    color: black;
+    font-family: "latobold";
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+#footer div.content div.contact ul {}
+#footer div.content div.contact ul li {
+    display: flex;
+    margin-bottom: 10px;
+}
+#footer div.content div.contact ul li img {
+    display: inline-block;
+    margin-right: 10px;
+    width: 19px;
+    height: 27px;
+}
+#footer div.content div.contact ul li a h5 {
+    color: grey;
+    font-family: "latoregular";
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+#footer div.credit {
+    border-top: 2px solid grey;
+}
+#footer div.credit h4 {
+    margin: 15px;
+    text-align: center;
+    color: grey;
+    font-family: "latoregular";
+    font-size: 18px;
+}
+#footer div.credit h4 span a {
+    color: grey;
+    font-family: "latobold";
+    font-size: 18px;
+}
+
+#all-prods {
+    position: relative;
+    padding-bottom: 80px;
+}
+#all-prods div.prod-back {
+    width: 75%;
+    height: 85%;
+    background-color: #eef9ff;
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    top: 150px;
+    display: none;
+}
+#all-prods div.prod-head {
+    display: flex;
+    align-items: flex-end;
+}
+#all-prods div.prod-head div.left {}
+#all-prods div.prod-head div.left h4 {
+    margin-bottom: 10px;
+    text-align: left;
+    font-family: "latoregular";
+    color: grey;
+    font-size: 26px;
+}
+#all-prods div.prod-head div.left h2 {
+    text-align: left;
+    font-family: "latobold";
+    color: black;
+    font-size: 50px;
+}
+#all-prods div.prod-head div.select {
+    width: 450px;
+    margin-left: 250px;
+}
+#all-prods div.prod-head div.select select {
+    width: 100%;
+    height: 50px;
+    font-size: 100%;
+    font-family: "latoregular";
+    cursor: pointer;
+    border-radius: 25px;
+    background-color: white;
+    border: none;
+    color: grey;
+    padding: 10px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 10px;
+}
+#all-prods div.all-prodsboxes {
+    padding: 20px;
+    width: 100%;
+    position: relative;
+}
+#all-prods div.all-prodsboxes div.dot {
+    position: absolute;
+    right: 0px;
+    top: 0;
+    z-index: 1;
+}
+#all-prods div.dot img {
+    width: 100%;
+}
+#all-prods div.contents {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+#all-prods div.contents div.contents1 {
+    width: 45%;
+    position: relative;
+    background: #ffffff;
+    margin-right: 30px;
+    margin-top: 10px;
+    padding: 50px 30px;
+    box-shadow: 0px 0px 15px #0000000f;
+    margin-bottom: 50px;
+    z-index: 5;
+    display: none;
+}
+
+#all-prods div.contents div.contents1:nth-child(2) {
+    margin-right: 0;
+}
+#all-prods div.contents div.contents1 img {
+    text-align: left;
+    display: block;
+    width: 81px;
+    height: 81px;
+}
+#all-prods div.contents div.contents1 h3 {
+    text-align: left;
+    font-family: "latobold";
+    font-size: 22px;
+    margin: 25px 0 15px;
+}
+#all-prods div.contents div.contents1 p {
+    text-align: left;
+    font-family: "latoregular";
+    font-size: 22px;
+}
+#all-prods div.contents div.contents1 div.bg-img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -50;
+    opacity: 0.1;
+}
+#all-prods div.contents div.contents1 div.bg-img img {
+    width: 204px;
+    height: 218px;
+}
+
+/* products page */
+#product-spot {
+    width: 100%;
+    background-image: url("../images/about-spotlight.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    margin-bottom: 0px;
+}
+#product-spot section.header div.right ul li:nth-child(2) {
+    border-bottom: 2px solid white;
+}
+#product-spot section.header div.right ul li:nth-child(3) a {
+    padding-bottom: 5px;
+}
+#product-spot section.header div.content div.right ul li:nth-child(1) {
+    border-bottom: none;
+}
+#product-spot section.header div.content div.right ul li:nth-child(1):hover {
+    border-bottom: 2px solid white;
+}
+
+section.header div.content .main-menu {
+    display: none;
+}
+section.header div.content .main-menu ul li{
+    border-bottom: 1px solid #13233d;
+    width: 95%;
+}
+.zmdi-close{
+    color: #13233d;
+}
+.zmdi-menu{
+    color: #fff;
+}
+section.header div.content .main-menu ul li a {
+    color:#13233d;
+    font-weight: 600;
+}
+section.header div.content .main-menu ul li:hover {
+    background: #777777a8;
+}
+section.header div.content span.menu-icon {
+    display: none;
+}
+section.header div.content span.close {
+    display: none;
+}
+.phone-menu {
+    display: none;
+}
+
+#spotlight section.homespot { 
+
+}
+#spotlight section.homespot { 
+    display: flex;
+    margin-top: 20px;
+}
+#spotlight section.homespot div.left { 
+    width: 50%;
+    padding-top: 50px;
+}
+#spotlight section.homespot div.left h1 { 
+    text-align: left;
+    font-family: "latobold";
+    color: white;
+    font-size: 69px;
+}
+#spotlight section.homespot div.left h2 { 
+    text-align: left;
+    font-family: "latoregular";
+    color: white;
+    font-size: 32px;
+    margin: 30px 0;
+}
+#spotlight section.homespot div.left a {
+    display: inline-block;
+    margin: 70px 0;
+    padding: 15px 30px;
+    border-radius: 10px;
+    background: white;
+}
+#spotlight section.homespot div.left a:hover {
+    display: inline-block;
+    margin: 70px 0;
+    padding: 15px 30px;
+    background-color: red;
+    box-shadow: 0px 3px 48px #00000017;
+    transition-duration: 0.8s;
+}
+#spotlight section.homespot div.left a:hover div.button span {
+    color: white;
+}
+#spotlight section.homespot div.left a div.button {
+    display: flex;
+    justify-content: space-between;
+}
+#spotlight section.homespot div.left a div.button span {
+    color: #ef1b23;
+    font-size: 20px;
+    font-family: "latobold";
+    margin-right: 20px;
+}
+#spotlight section.homespot div.left a div.button div.arrow {
+    width: 15px;
+    display: block;
+    color: red;
+}
+#spotlight section.homespot div.left a div.button div.arrow svg {
+    margin-top: 1px;
+}
+#spotlight section.homespot div.left a:hover div.button div.arrow {
+    color: white;
+    transition-duration: 0.8s;
+}
+#spotlight section.homespot div.right{
+    width: 35%;
+}
+#spotlight section.homespot div.right img{
+    width: 100%;
+    display: block;
+    margin-right: -70px;
+}
+#spotlightcontent { 
+    padding-top: 50px;
+}
+#spotlightcontent div.title { 
+
+}
+#spotlightcontent div.title div.left { 
+    width: 65%;
+    margin-right: 10%;
+}
+#spotlightcontent div.title div.left h4 { 
+    color: white;
+    font-family: "latobold";
+    font-size: 30px;
+    text-decoration: underline;
+}
+#spotlightcontent div.title div.left h2 { 
+    color: white;
+    font-family: "latobold";
+    font-size: 50px;
+    margin: 30px 0;
+}
+#spotlightcontent div.title div.left p { 
+    color: white;
+    font-family: "latoregular";
+    font-size: 24px;
+}
+#spotlightcontent div.title div.right { 
+    width: 25%;
+}
+#spotlightcontent div.title div.right img { 
+    display: block;
+    margin-top: 50px;
+    width: 100%;
+}
+#all-prods div.contents div.contents1 a {
+    display: inline-block;
+    margin: 70px 0;
+    padding: 15px 30px;
+    border-radius: 10px;
+    background: #fc3e3e;
+    border: 2px solid #ffffff;
+    transition-duration: 0.8s;
+}
+#all-prods div.contents div.contents1 a:hover {
+    display: inline-block;
+    margin: 70px 0;
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: 2px solid #fc3e3e;
+    background: #ffffff;
+    transition-duration: 0.8s;
+}
+#all-prods div.contents div.contents1 a:hover div.button span {
+    color: red;
+    transition-duration: 0.8s;
+}
+#all-prods div.contents div.contents1 a div.button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#all-prods div.contents div.contents1 a div.button span {
+    color: #ffffff;
+    font-size: 20px;
+    font-family: "latobold";
+    margin-right: 20px;
+    transition-duration: 0.8s;
+}
+#all-prods div.contents div.contents1 a div.button div.arrow {
+    width: 25px;
+    display: block;
+    color: #ffffff;
+    transition-duration: 0.8s;
+}
+#all-prods div.contents div.contents1 a div.button div.arrow svg {
+    margin-top: 1px;
+}
+#all-prods div.contents div.contents1 a:hover div.button div.arrow {
+    color: red;
+    transition-duration: 0.8s;
+}
+
+/* Responsive section of index page */
+@media all and (max-width: 1440px){
+    #spotlight section.homespot div.right {
+        width: 35%;
+    }
+    #all-prods div.all-prodsboxes div.dot {
+        position: absolute;
+        right: 0px;
+        top: 0;
+        z-index: 1;
+        width: 80%;
+    }
+    #spotlightcontent div.title div.right {
+        width: 30%;
+    }
+}
+@media all and (max-width: 960px){
+    #all-prods div.contents div.contents1 {
+        width: 45%;
+        
+    }
+    #all-prods div.contents div.contents1:nth-child(3) {
+        margin-right: 30px; 
+    }
+}
+@media all and (max-width: 760px){
+    #all-prods div.contents div.contents1 {
+        width: 70%;
+        
+    }
+    #footer div.content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0px;
+    }
+    #footer div.content div.social {
+        display: inline-block;
+        margin-right: 10%;
+        width: 25%;
+    }
+    #footer div.content div.company {
+        display: inline-block;
+        width: 25%;
+    }
+    #footer div.content div.contact {
+        display: inline-block;
+        width: 25%;
+    }
+    #footer div.social div.footlogo {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+@media all and (max-width: 640px){
+
+}
+@media all and (max-width: 540px){
+    #all-prods div.contents div.contents1 {
+        width: 100%;
+    }
+    #all-prods div.prod-head div.left h2 {
+        text-align: left;
+        font-family: "latobold";
+        color: black;
+        font-size: 34px;
+    }
+    #all-prods {
+        position: relative;
+        padding-top: 11px;
+        padding-bottom: 80px;
+    }
+    #spotlightcontent div.title div.left h2 {
+        color: white;
+        font-family: "latobold";
+        font-size: 34px;
+        margin: 30px 0;
+    }
+   
+    #footer div.content div.social {
+        display: inline-block;
+        margin-right: 10%;
+        width: 50%;
+    }
+    #footer div.content div.company {
+        display: inline-block;
+        width: 50%;
+    }
+    #footer div.content div.contact {
+        display: inline-block;
+        width: 50%;
+    }
+    #footer div.social div.footlogo {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #all-prods div.contents div.contents1 {
+        width: 100%;
+    }
+    
+}
+@media all and (max-width: 460px){
+    
+    #footer div.content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    #spotlight {
+        width: 100%;
+        background-repeat: no-repeat;
+        background-image: url(../images/hero-1.jpg);
+        background-size: cover;
+        height: 135vh;
+    }
+    #footer div.content div.contact{
+        text-align: center;
+    }
+    #footer div.content div.contact ul li{
+        text-align: center;
+    }
+    #footer div.content div.company{
+        text-align: center;
+    }
+    #footer div.content div.company ul li{
+        text-align: center;
+    }
+    #spotlight section.homespot div.right {
+        display: none;
+    }
+    
+}
+@media all and (max-width: 420px){
+    #footer div.content div.contact ul {
+        margin-left: 20%;
+    }
+    #footer div.content{
+        width: 100%;
+    }
+    #footer div.content div.contact{
+        width: 100%;
+    }
+    #footer div.content div.company {
+        display: inline-block;
+        width: 90%;
+    }
+    #spotlight section.homespot div.left h1 {
+        text-align: left;
+        font-family: "latobold";
+        color: white;
+        font-size: 61px;
+    }
+    #spotlight section.homespot div.left {
+        width: 100%;
+        padding-top: 50px;
+    }
+    section.header div.content div.right {
+        display: none;
+        align-items: center;
+        justify-content: space-between;
+    }
+    section.header div.content span.menu-icon {
+        display: block;
+    }
+    section.header div.content span {
+        font-size: 30px;
+    }
+    section.header div.content .main-menu ul li:hover{
+        background: lightseagreen;
+    }
+    section.header div.content .main-menu {
+        background-color:#fff;
+        width: 70%;
+        height: 100vh;
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: none;
+        line-height: 50px;
+        padding-top: 58px;
+        padding-left: 20px;
+    }
+    section.header div.content span.close {
+        color: #fff;
+    }
+    section.header div.content span.menu-icon {
+        display: block;
+    }
+    section.header div.content span.close {
+        display: block;
+    }
+    section.header div.content span.close {
+        display: none;
+    }
+    section.header div.content span {
+        position: absolute;
+        right: 42px;
+        top: 60px;
+        color: #f7f9ff;
+        z-index: 3;
+        cursor: pointer;
+    }
+    #spotlightcontent div.title div.left h2 {
+        color: white;
+        font-family: "latobold";
+        font-size: 33px;
+        margin: 30px 0;
+    }
+    #all-prods div.prod-head div.left h2 {
+        text-align: left;
+        font-family: "latobold";
+        color: black;
+        font-size: 24px;
+    }
+
+}
+@media all and (max-width: 320px){
+    
+    #spotlight section.homespot div.left{
+        width: 100%;
+    }
+    #spotlight section.homespot div.left h1 {;
+        font-size: 44px;
+    }
+    section.header div.content div.left h1 a {
+        width: 50%;
+      
+    }
+    section.header div.content {
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+    }
+    section.header div.content div.left h1 {
+        width: 100%;
+    }
+    section.header div.content div.right ul li {
+        margin-right: 10px;
+    }
+    section.header div.content div.right ul li a {
+        text-align: center;
+        display: inline-block;
+        color: white;
+        font-size: 17px;
+        font-family: "latoregular";
+        padding-bottom: 5px;
+    }
+    section.header div.content div.right {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+    }
+    #footer div.content div.contact ul li a h5 {
+        color: grey;
+        font-family: "latoregular";
+        font-size: 20px;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+    #spotlight section.homespot {
+        display: flex;
+        margin-top: 0px;
+    }
+    #spotlight section.homespot div.left {
+        width: 100%;
+        padding-top: 25px;
+    }
+    #spotlight {
+        width: 100%;
+        background-repeat: no-repeat;
+        background-image: url(../images/hero-1.jpg);
+        background-size: cover;
+        height: 105vh;
+    }
+}
+
+
+
