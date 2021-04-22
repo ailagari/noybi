@@ -934,6 +934,12 @@ section.header div.content span.close {
         color: black;
         font-size: 24px;
     }
+     #spotlight section.homespot div.left h1 {
+        text-align: left;
+        font-family: "latobold";
+        color: white;
+        font-size: 54px;
+    }
 
 }
 @media all and (max-width: 320px){
