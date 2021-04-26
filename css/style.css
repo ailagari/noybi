@@ -15,6 +15,10 @@ ol,
 ul {
     list-style: none;
 }
+ul.roles{
+    list-style: disc;
+}
+
 blockquote {
     quotes: none;
 }
@@ -87,6 +91,17 @@ br.clear {
 .thumb img {
     display: block;
     width: 100%;
+}
+/* roles list style */
+ul.roles li {
+    font-family: "latoregular";
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+ul.roles li span {
+    font-family: "latobold";
+    font-size: 19px;
+    margin-bottom: 10px; 
 }
 a:hover,
 [type="submit"]:hover {
@@ -425,6 +440,13 @@ div.links ul li h5 a {
     color: black;
     font-size: 50px;
 }
+#all-prods div.prod-head div.left h4 {
+    text-align: left;
+    font-family: "latoregular";
+    color: black;
+    font-size: 24px;
+    font-style: italic;
+}
 #all-prods div.prod-head div.select {
     width: 450px;
     margin-left: 250px;
@@ -476,6 +498,22 @@ div.links ul li h5 a {
     margin-bottom: 50px;
     z-index: 5;
     display: none;
+}
+#all-prods h4{
+    text-align: left;
+    font-family: "latoregular";
+    font-size: 22px;
+}
+#all-prods h4 span{
+    text-align: left;
+    font-family: "latobold";
+    font-size: 22px;
+}
+#all-prods h4 small{
+    text-align: left;
+    font-family: "latoregular";
+    font-size: 22px;
+    color: #dc3c3c;
 }
 
 #all-prods div.contents div.contents1:nth-child(2) {
@@ -689,6 +727,7 @@ section.header div.content span.close {
     background: #ffffff;
     transition-duration: 0.8s;
 }
+
 #all-prods div.contents div.contents1 a:hover div.button span {
     color: red;
     transition-duration: 0.8s;
@@ -718,7 +757,55 @@ section.header div.content span.close {
     color: red;
     transition-duration: 0.8s;
 }
+/* internship button */
 
+#all-prods div.contents div.contents1 a.intern {
+    display: inline-block;
+    margin: 70px 0;
+    padding: 15px 30px;
+    border-radius: 10px;
+    background: #1e9cef;
+    border: 2px solid #ffffff;
+    transition-duration: 0.8s;
+}
+#all-prods div.contents div.contents1 a.intern:hover {
+    display: inline-block;
+    margin: 70px 0;
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: 2px solid #1e9cef;
+    background: #ffffff;
+    transition-duration: 0.8s;
+}
+#all-prods div.contents div.contents1 a.intern:hover div.button span {
+    color: #1e9cef;
+    transition-duration: 0.8s;
+}
+#all-prods div.contents div.contents1 a.intern div.button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#all-prods div.contents div.contents1 a.intern div.button span {
+    color: #ffffff;
+    font-size: 20px;
+    font-family: "latobold";
+    margin-right: 20px;
+    transition-duration: 0.8s;
+}
+#all-prods div.contents div.contents1 a.intern div.button div.arrow {
+    width: 25px;
+    display: block;
+    color: #ffffff;
+    transition-duration: 0.8s;
+}
+#all-prods div.contents div.contents1 a.intern div.button div.arrow svg {
+    margin-top: 1px;
+}
+#all-prods div.contents div.contents1 a.intern:hover div.button div.arrow {
+    color: #1e9cef;
+    transition-duration: 0.8s;
+}
 /* Responsive section of index page */
 @media all and (max-width: 1440px){
     #spotlight section.homespot div.right {
@@ -735,6 +822,26 @@ section.header div.content span.close {
         width: 30%;
     }
 }
+@media all and (max-width: 1150px){
+    #all-prods div.contents div.contents1 a {
+        display: inline-block;
+        margin: 50px 0 0 0;
+        padding: 15px 30px;
+        border-radius: 10px;
+        background: #fc3e3e;
+        border: 2px solid #ffffff;
+        transition-duration: 0.8s;
+    }
+    #all-prods div.contents div.contents1 a.intern {
+        display: inline-block;
+        margin: 50px 0 0 0;
+        padding: 15px 30px;
+        border-radius: 10px;
+        background: #1e9cef;
+        border: 2px solid #ffffff;
+        transition-duration: 0.8s;
+    }
+}
 @media all and (max-width: 960px){
     #all-prods div.contents div.contents1 {
         width: 45%;
@@ -745,6 +852,13 @@ section.header div.content span.close {
     }
 }
 @media all and (max-width: 760px){
+    #all-prods div.prod-head div.left h4 {
+        text-align: left;
+        font-family: "latoregular";
+        color: black;
+        font-size: 21px;
+        font-style: italic;
+    }
     #all-prods div.contents div.contents1 {
         width: 70%;
         
@@ -774,6 +888,19 @@ section.header div.content span.close {
     }
 }
 @media all and (max-width: 640px){
+    #all-prods div.prod-head div.left h2 {
+        text-align: left;
+        font-family: "latobold";
+        color: black;
+        font-size: 40px;
+    }
+    #all-prods div.prod-head div.left h4 {
+        text-align: left;
+        font-family: "latoregular";
+        color: black;
+        font-size: 18px;
+        font-style: italic;
+    }
 
 }
 @media all and (max-width: 540px){
@@ -821,7 +948,19 @@ section.header div.content span.close {
     
 }
 @media all and (max-width: 460px){
-    
+    #all-prods div.prod-head div.left h2 {
+        text-align: left;
+        font-family: "latobold";
+        color: black;
+        font-size: 31px;
+    }
+    #all-prods div.prod-head div.left h4 {
+        text-align: left;
+        font-family: "latoregular";
+        color: black;
+        font-size: 16px;
+        font-style: italic;
+    }
     #footer div.content {
         display: flex;
         flex-direction: column;
@@ -979,7 +1118,59 @@ section.header div.content span.close {
     }
 
 }
+@media all and (max-width: 356px){
+    #all-prods div.contents div.contents1 a div.button span {
+        color: #ffffff;
+        font-size: 20px;
+        font-family: "latobold";
+        margin-right: 10px;
+        transition-duration: 0.8s;
+    }
+}
 @media all and (max-width: 320px){
+    #all-prods div.contents div.contents1 a div.button span {
+        color: #ffffff;
+        font-size: 20px;
+        font-family: "latobold";
+        margin-right: 10px;
+        transition-duration: 0.8s;
+    }
+    #all-prods div.contents div.contents1 a div.button div.arrow {
+        width: 17px;
+        display: block;
+        color: #ffffff;
+        transition-duration: 0.8s;
+    }
+    #spotlightcontent div.title div.left h2 {
+        color: white;
+        font-family: "latobold";
+        font-size: 31px;
+        margin: 30px 0 0 0;
+    }
+    #all-prods div.prod-head {
+        display: flex;
+        align-items: flex-end;
+        width: 100%;
+    }
+    #all-prods div.contents div.contents1 a {
+        display: inline-block;
+        margin: 10px 0 0 0;
+        padding: 15px 30px;
+        border-radius: 10px;
+        background: #fc3e3e;
+        border: 2px solid #ffffff;
+        transition-duration: 0.8s;
+        width: 100%;
+    }
+    #all-prods div.contents div.contents1 a.intern {
+        display: inline-block;
+        margin: 10px 0 0 0;
+        padding: 15px 30px;
+        border-radius: 10px;
+        background: #1e9cef;
+        border: 2px solid #ffffff;
+        transition-duration: 0.8s;
+    }
     
     #spotlight section.homespot div.left{
         width: 100%;
