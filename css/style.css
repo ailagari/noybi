@@ -161,7 +161,7 @@ a:hover,
     background-repeat: no-repeat;
     background-image: url('../images/hero-1.jpg');
     background-size: cover;
-    height: 130vh;
+    height: fit-content;
 }
 section.header {
     padding-top: 20px;
