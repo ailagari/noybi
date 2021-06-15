@@ -609,31 +609,35 @@ section.header div.content span.close {
     display: flex;
     margin-top: 20px;
 }
-#spotlight section.homespot div.left { 
+#spotlight section.homespot div.content{
+    display: flex;
+    align-items: center;
+}
+#spotlight section.homespot div.content div.left { 
     width: 50%;
     padding-top: 50px;
 }
-#spotlight section.homespot div.left h1 { 
+#spotlight section.homespot div.content div.left h1 { 
     text-align: left;
     font-family: "latobold";
     color: white;
     font-size: 69px;
 }
-#spotlight section.homespot div.left h2 { 
+#spotlight section.homespot div.content div.left h2 { 
     text-align: left;
     font-family: "latoregular";
     color: white;
     font-size: 32px;
     margin: 30px 0;
 }
-#spotlight section.homespot div.left a {
+#spotlight section.homespot div.content div.left a {
     display: inline-block;
     margin: 70px 0;
     padding: 15px 30px;
     border-radius: 10px;
     background: white;
 }
-#spotlight section.homespot div.left a:hover {
+#spotlight section.homespot div.content div.left a:hover {
     display: inline-block;
     margin: 70px 0;
     padding: 15px 30px;
@@ -641,35 +645,35 @@ section.header div.content span.close {
     box-shadow: 0px 3px 48px #00000017;
     transition-duration: 0.8s;
 }
-#spotlight section.homespot div.left a:hover div.button span {
+#spotlight section.homespot div.content div.left a:hover div.button span {
     color: white;
 }
-#spotlight section.homespot div.left a div.button {
+#spotlight section.homespot div.content div.left a div.button {
     display: flex;
     justify-content: space-between;
 }
-#spotlight section.homespot div.left a div.button span {
+#spotlight section.homespot div.content div.left a div.button span {
     color: #ef1b23;
     font-size: 20px;
     font-family: "latobold";
     margin-right: 20px;
 }
-#spotlight section.homespot div.left a div.button div.arrow {
+#spotlight section.homespot div.content div.left a div.button div.arrow {
     width: 15px;
     display: block;
     color: red;
 }
-#spotlight section.homespot div.left a div.button div.arrow svg {
+#spotlight section.homespot div.content div.left a div.button div.arrow svg {
     margin-top: 1px;
 }
-#spotlight section.homespot div.left a:hover div.button div.arrow {
+#spotlight section.homespot div.content div.left a:hover div.button div.arrow {
     color: white;
     transition-duration: 0.8s;
 }
-#spotlight section.homespot div.right{
+#spotlight section.homespot div.content div.right{
     width: 35%;
 }
-#spotlight section.homespot div.right img{
+#spotlight section.homespot div.content div.right img{
     width: 100%;
     display: block;
     margin-right: -70px;
@@ -808,8 +812,8 @@ section.header div.content span.close {
 }
 /* Responsive section of index page */
 @media all and (max-width: 1440px){
-    #spotlight section.homespot div.right {
-        width: 35%;
+    #spotlight section.homespot div.content div.right {
+        width: 50%;
     }
     #all-prods div.all-prodsboxes div.dot {
         position: absolute;
@@ -888,6 +892,34 @@ section.header div.content span.close {
     }
 }
 @media all and (max-width: 640px){
+    #footer div.credit h4 {
+        margin: 6px;
+        text-align: center;
+        color: grey;
+        font-family: "latoregular";
+        font-size: 12px;
+    }
+    #footer div.credit h4 span a {
+        color: grey;
+        font-family: "latobold";
+        font-size: 12px;
+    }
+    #footer div.content div.contact ul li a h5 {
+        color: grey;
+        font-family: "latoregular";
+        font-size: 15px;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+    #spotlight section.homespot div.content div.left {
+        width: 70%;
+        padding-top: 50px;
+    }
+    #spotlight section.homespot div.content div.right {
+        position: relative;
+        z-index: 1;
+        margin-top: -274px;
+    }
     #all-prods div.prod-head div.left h2 {
         text-align: left;
         font-family: "latobold";
@@ -945,9 +977,23 @@ section.header div.content span.close {
     #all-prods div.contents div.contents1 {
         width: 100%;
     }
+    #spotlight section.homespot div.content div.right {
+        display: block;
+        position: relative;
+        z-index: 1;
+        margin-top: -253px;
+    }
+    #spotlight section.homespot div.content div.left {
+        width: 100%;
+        padding-top: 50px;
+    }
     
 }
 @media all and (max-width: 460px){
+    #spotlight section.homespot div.content div.left {
+        width: 100%;
+        padding-top: 50px;
+    }
     #all-prods div.prod-head div.left h2 {
         text-align: left;
         font-family: "latobold";
@@ -987,8 +1033,11 @@ section.header div.content span.close {
     #footer div.content div.company ul li{
         text-align: center;
     }
-    #spotlight section.homespot div.right {
-        display: none;
+    #spotlight section.homespot div.content div.right {
+    display: block;
+    position: relative;
+    z-index: 1;
+    margin-top: -253px;
     }
     #footer div.content div.company {
         display: inline-block;
@@ -1033,7 +1082,7 @@ section.header div.content span.close {
         margin-bottom: 10px;
         text-align: left;
     }
-    #spotlight section.homespot div.left h1 {
+    #spotlight section.homespot div.content div.left h1 {
         text-align: left;
         font-family: "latobold";
         color: white;
@@ -1047,7 +1096,7 @@ section.header div.content span.close {
         margin-bottom: 20px;
         text-align: left;
     }
-    #spotlight section.homespot div.left {
+    #spotlight section.homespot div.content div.left {
         width: 100%;
         padding-top: 50px;
     }
@@ -1110,7 +1159,7 @@ section.header div.content span.close {
         color: black;
         font-size: 24px;
     }
-     #spotlight section.homespot div.left h1 {
+     #spotlight section.homespot div.content div.left h1 {
         text-align: left;
         font-family: "latobold";
         color: white;
@@ -1128,6 +1177,13 @@ section.header div.content span.close {
     }
 }
 @media all and (max-width: 320px){
+    #spotlight section.homespot div.content div.left h2 {
+        text-align: left;
+        font-family: "latoregular";
+        color: white;
+        font-size: 22px;
+        margin: 30px 0;
+    }
     #all-prods div.contents div.contents1 a div.button span {
         color: #ffffff;
         font-size: 20px;
@@ -1172,11 +1228,11 @@ section.header div.content span.close {
         transition-duration: 0.8s;
     }
     
-    #spotlight section.homespot div.left{
+    #spotlight section.homespot div.content div.left{
         width: 100%;
     }
-    #spotlight section.homespot div.left h1 {
-        font-size: 44px;
+    #spotlight section.homespot div.content div.left h1 {
+        font-size: 41px;
     }
     section.header div.content div.left h1 a {
         width: 50%;
@@ -1219,7 +1275,7 @@ section.header div.content span.close {
         display: flex;
         margin-top: 0px;
     }
-    #spotlight section.homespot div.left {
+    #spotlight section.homespot div.content div.left {
         width: 100%;
         padding-top: 25px;
     }
@@ -1230,7 +1286,16 @@ section.header div.content span.close {
         background-size: cover;
         height: 105vh;
     }
+    section.header div.content div.right {
+        display: none;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
+
+
+
+
 
 
 
